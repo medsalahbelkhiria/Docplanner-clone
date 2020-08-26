@@ -1,6 +1,6 @@
 /* HTML Elements */
 body {
-  color: #747474 !important;
+  color: #cbcbcb !important;
 }
 
 h1 {
@@ -8,7 +8,7 @@ h1 {
 }
 
 main {
-  padding: 8em;
+  padding-top: 8em;
 }
 
 /* Navbar Elements */
@@ -69,23 +69,42 @@ main {
 }
 
 .services-img {
-  width: 345px;
+  width: 390px;
   display: block;
 
 }
 
-.for-patients {
-  background-color: #00b39b;
+.for-patients,
+.for-doctors {
   color: white;
   border-radius: 30px;
-  padding: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  overflow: hidden;
+  /* border: 3px solid white; */
+}
+
+.for-patients {
+  background-color: #00b39b;
+}
+
+select {
+  border-radius: 5px;
+  padding: 7px;
 }
 
 .for-doctors {
   background-color: #3d83df;
-  color: white;
-  border-radius: 30px;
-  padding: 10px;
+}
+
+.select {
+  min-width: 180px;
+}
+
+.service-title {
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
 /* About-1 Elements */
@@ -97,12 +116,34 @@ main {
 
 .about-title {
   color: #00b39b;
+  font-size: 25px !important;
+}
+
+.about-links {
+  justify-content: space-between;
+  margin: 20px;
+  fill: #c4c4c4;
+
+}
+
+svg {
+  width: 135px;
+  margin: 10px;
+}
+
+.about-links:hover {
+  fill: #00b39b;
 }
 
 /* About-2 Elements */
+/* .about22 {
+  background-color: #d7f6f6;
+  width: 100%;
+} */
+
 .about-2 {
   background-color: #d7f6f6;
-
+  /* height: 500px; */
   padding: 20px;
   margin: 50px 0;
 }
@@ -112,7 +153,6 @@ main {
 }
 
 .component {
-  border: solid 1px;
   background-color: #fff;
   border-radius: 5px;
   font-size: small;
@@ -132,10 +172,17 @@ main {
 /* Card Elements */
 .card-spec {
   margin: 15px 0;
+  padding: 0 !important;
+  margin: 10px !important;
+  color: #747474;
 }
 
 /* Footer Elements */
 .footer {
   text-align: center;
   font-size: small;
+}
+
+.component:nth-child(even) {
+  transform: translateY(-20px);
 }
